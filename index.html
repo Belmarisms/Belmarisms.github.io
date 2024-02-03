@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YN7SMWN698"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-YN7SMWN698");
+        </script>
+        <script type="text/javascript">
+            (function (c, l, a, r, i, t, y) {
+                c[a] =
+                    c[a] ||
+                    function () {
+                        (c[a].q = c[a].q || []).push(arguments);
+                    };
+                t = l.createElement(r);
+                t.async = 1;
+                t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0];
+                y.parentNode.insertBefore(t, y);
+            })(window, document, "clarity", "script", "kw4ylu3z4x");
+        </script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Belmarisms.</title>
+        <link rel="icon" href="logo.png" />
+        <style>
+            .disable-dbl-tap-zoom {
+                touch-action: manipulation;
+            }
+
+            .centered-div {
+                width: 65%;
+                margin: 0 auto;
+            }
+
+            #quoteNumber {
+                text-align: center;
+                font-size: 28pt;
+                color: #664229;
+                margin-top: 100px;
+                text-decoration: underline;
+            }
+
+            body {
+                background-color: #fff0db;
+                font-family: "Times New Roman", Times, serif;
+            }
+
+            .nav-button {
+                margin: 20px auto;
+                padding: 10px 20px;
+                font-size: 18px;
+                color: #fff0db;
+                background-color: #664229;
+                border: 3px solid #664229;
+                cursor: pointer;
+                position: fixed;
+                font-weight: bolder;
+                bottom: 10px;
+                left: 30px;
+                border-radius: 10px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            .nav-button:hover {
+                background-color: #fff0db;
+                color: #664229;
+            }
+
+            #newQuoteButton {
+                padding: 10px 20px;
+                position: fixed;
+                left: 50px;
+                right: 50px;
+            }
+
+            .centered-div {
+                width: 65%;
+                margin: 0 auto;
+            }
+
+            #content {
+                text-align: center;
+                font-size: 25pt;
+                color: #664229;
+                margin-top: 120px;
+            }
+
+            #quoteNumber {
+                text-align: center;
+                font-size: 28pt;
+                color: #664229;
+                margin-top: 200px;
+                text-decoration: underline;
+            }
+
+            body {
+                background-color: #fff0db;
+                font-family: "Times New Roman", Times, serif;
+            }
+
+            #newQuoteButton {
+                margin: 20px auto;
+                padding: 10px 20px;
+                font-size: 18px;
+                color: #fff0db;
+                background-color: #664229;
+                border: 3px solid #664229;
+                cursor: pointer;
+                position: fixed;
+                bottom: 10px;
+                left: 30px;
+                border-radius: 10px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            #newQuoteButton:hover {
+                background-color: #fff0db;
+                color: #664229;
+            }
+
+            #previousButton {
+                padding: 10px 20px;
+                position: fixed;
+                left: 50px;
+                right: 280px;
+            }
+
+            #nextButton {
+                padding: 10px 20px;
+                position: fixed;
+                left: 240px;
+                right: 50px;
+            }
+
+            #bearButton {
+                font-size: 40pt;
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                border: 0px;
+                background: rgba(0, 0, 0, 0);
+            }
+
+            #infoButton {
+                font-size: 40pt;
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                border: 0px;
+                background: rgba(0, 0, 0, 0);
+                margin: 20px auto;
+                padding: 10px 25px;
+                font-size: 28px;
+                color: #fff0db;
+                background-color: #664229;
+                border: 3px solid #664229;
+                cursor: pointer;
+                position: fixed;
+                bottom: 10px;
+                left: 30px;
+                border-radius: 1000px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            #infoButton:hover {
+                background-color: #fff0db;
+                color: #664229;
+            }
+
+            .popup-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                z-index: 9999;
+            }
+
+            .popup-content {
+                background-color: #fff0db;
+                width: 80%;
+                max-width: 600px;
+                margin: 100px auto;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                position: relative;
+            }
+
+            .popup-close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+                font-size: 24px;
+            }
+
+            @media screen and (max-width: 768px) {
+                #content {
+                    font-size: 20pt;
+                    position: fixed;
+                    top: 20%;
+                    left: 50px;
+                    right: 50px;
+                }
+
+                #quoteNumber {
+                    font-size: 20pt;
+                    position: fixed;
+                    top: 2%;
+                    left: 0;
+                    right: 0;
+                }
+
+                #newQuoteButton {
+                    padding: 10px 20px;
+                    position: fixed;
+                    width: 30%;
+                }
+
+                #previousButton {
+                    padding: 10px 20px;
+                    position: fixed;
+                    left: 20px;
+                    width: 15%;
+                }
+
+                #nextButton {
+                    padding: 10px 20px;
+                    position: fixed;
+                    right: 20px;
+                    width: 15%;
+                }
+
+                #bearButton {
+                    font-size: 30pt;
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    border: 0px;
+                }
+
+                #infoButton {
+                    font-size: 40pt;
+                    position: fixed;
+
+                    border: 0px;
+                    background: rgba(0, 0, 0, 0);
+                    margin: 20px auto;
+                    padding: 0px 5px;
+                    font-size: 28px;
+                    color: #fff0db;
+                    background-color: #664229;
+                    border: 3px solid #664229;
+                    cursor: pointer;
+                    position: fixed;
+                    left: 90% !important;
+                    border-radius: 1000px;
+                    transition: background-color 0.3s ease, color 0.3s ease;
+                }
+            }
+
+
+            /* Add this to your <style> section */
+.hidden-content {
+    display: none;
+}
+
+
+        </style>
+    </head>
+
+    <body class="disable-dbl-tap-zoom">
+<div id="welcomeText" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 130pt; color: #664229; opacity: 1; z-index: 10000; border-radius: 100%; padding: 50px 90px;   box-shadow: 0px 0px 20px #664229;">B</div>
+
+    	<div id="mainContent" class="hidden-content">
+        <div style="width: 100%;">
+            <div class="centered-div">
+                <h1 style="position: fixed; top: 10px; left: 5px; right: 5px; text-align: center; color: #664229; font-size: 40pt;">Belmarisms.</h1>
+                <div id="quoteNumber">001/300</div>
+                <h1 id="content">Greetings, fellow glitch.</h1>
+                <button id="previousButton" class="nav-button"><</button>
+                <button id="newQuoteButton">Random</button>
+                <button id="nextButton" class="nav-button">></button>
+                <a target="_blank" href="https://twitter.com/BearWillness"><button id="bearButton" class="">🐻</button></a>
+                <button id="infoButton" class="">i</button>
+            </div>
+        </div>
+
+
+        <div class="popup-container" id="popupContainer">
+            <div class="popup-content" style="text-align: center; color: #664229;">
+                <span id="popupClose" class="popup-close">×</span>
+                <h2>Belmarisms.</h2>
+                <p style="font-size: 15pt;">
+                    Belmarisms is a collection of Luke Belmar's motivational and educational quotes. More quotes coming soon.
+                    <a href="https://www.capital.club/" target="_blank" style="color: #664229;">
+                        <br />
+                        <br />
+                        Become a glitch.
+                    </a>
+                    <br /> <br />- WB
+
+                </p>
+            </div>
+        </div>
+</div>
+        <script>
+            const contentElement = document.getElementById("content");
+            const quoteNumberElement = document.getElementById("quoteNumber");
+            const newQuoteButton = document.getElementById("newQuoteButton");
+            const previousButton = document.getElementById("previousButton");
+            const nextButton = document.getElementById("nextButton");
+            const infoButton = document.getElementById("infoButton");
+            const popupContainer = document.getElementById("popupContainer");
+            const popupClose = document.getElementById("popupClose");
+            let currentQuoteIndex = 0;
+            let totalQuotes = 0;
+
+            function formatQuoteNumber(number, total) {
+                const paddedNumber = String(number).padStart(3, "0");
+                const paddedTotal = String(total).padStart(3, "0");
+                return `${paddedNumber}/${paddedTotal}`;
+            }
+
+            function updateQuoteDisplay(quoteIndex) {
+                if (quoteIndex >= 0 && quoteIndex < totalQuotes) {
+                    let randomQuote = quotes[quoteIndex].trim();
+                    randomQuote = randomQuote.replace(/-/g, "");
+                    randomQuote = `"${randomQuote}"`;
+
+                    currentQuoteIndex = quoteIndex + 1;
+                    quoteNumberElement.textContent = formatQuoteNumber(currentQuoteIndex, totalQuotes);
+                    contentElement.textContent = randomQuote;
+                }
+            }
+
+            function getRandomQuote() {
+                fetch("quotes.txt")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        quotes = data.split("\n");
+                        totalQuotes = quotes.length;
+                        const randomIndex = Math.floor(Math.random() * totalQuotes);
+                        updateQuoteDisplay(randomIndex);
+                    })
+                    .catch((error) => {
+                        console.error("Error fetching quotes:", error);
+                    });
+            }
+
+            popupClose.addEventListener("click", closePopup);
+
+            popupContainer.addEventListener("click", function (event) {
+                if (event.target === popupContainer) {
+                    closePopup();
+                }
+            });
+
+            function openPopup() {
+                popupContainer.style.display = "block";
+            }
+
+            function closePopup() {
+                popupContainer.style.display = "none";
+            }
+
+            newQuoteButton.addEventListener("click", getRandomQuote);
+
+            previousButton.addEventListener("click", () => {
+                if (currentQuoteIndex > 1) {
+                    updateQuoteDisplay(currentQuoteIndex - 2);
+                }
+            });
+
+            nextButton.addEventListener("click", () => {
+                if (currentQuoteIndex < totalQuotes) {
+                    updateQuoteDisplay(currentQuoteIndex);
+                }
+            });
+
+            infoButton.addEventListener("click", openPopup);
+
+            popupContainer.addEventListener("click", function (event) {
+                if (event.target === popupContainer) {
+                    closePopup();
+                }
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === " " || event.key === "Spacebar") {
+                    getRandomQuote();
+                    event.preventDefault();
+                }
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "ArrowLeft" || event.key === "Left") {
+                    if (currentQuoteIndex > 1) {
+                        updateQuoteDisplay(currentQuoteIndex - 2);
+                    }
+                }
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "ArrowRight" || event.key === "Right") {
+                    if (currentQuoteIndex < totalQuotes) {
+                        updateQuoteDisplay(currentQuoteIndex);
+                    }
+                }
+            });
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    // Fade out the welcome text more quickly
+    var welcomeText = document.getElementById("welcomeText");
+    var mainContent = document.getElementById("mainContent");
+    setTimeout(function() {
+        welcomeText.style.transition = "opacity 0.5s ease-in-out";
+        welcomeText.style.opacity = "0";
+        setTimeout(function() {
+            welcomeText.style.display = "none";
+            // Quickly fade in the main content after the welcome text fades out
+            mainContent.classList.remove("hidden-content");
+            mainContent.style.transition = "opacity 0.5s ease-in-out";
+            mainContent.style.opacity = "0";
+            setTimeout(function() {
+                mainContent.style.opacity = "1";
+            }, 10); // Start the fade-in effect almost immediately after making the element visible
+        }, 500); // This should match the duration of the fade-out effect, reduced to 0.5s
+    }, 850); // Reduced delay before starting the fade-out effect
+});
+
+            getRandomQuote();
+
+
+        </script>
+    </body>
+</html>
